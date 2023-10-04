@@ -1,9 +1,9 @@
 # What Is Hypothesis Testing❓
 
-<div style="text-align:center;">
+<p align="center">
     <img src="https://editor.analyticsvidhya.com/uploads/52940cover.jpg" alt="GitHub Logo" width="400" height="300">
-    <p>Photo by Analytics Vidhya</p>
-</div>
+</p>
+<p align="center">Photo by Analytics Vidhya</p>
 
 
 
