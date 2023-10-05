@@ -14,9 +14,13 @@ Hypothesis testing is a statistical method used to make informed decisions about
 
 ## Statistical Methods
 
-• <u>T Test</u> - The t-test is a statistical hypothesis test used to determine whether there is a significant difference between the means of two groups or samples. It is particularly useful when working with small sample sizes and is employed to assess whether the observed differences in sample means are likely to represent true differences in the population or if they could have occurred by chance \
-• (yet to add)
+• <u>T Test</u> - The t-test is a statistical hypothesis test used to determine whether:
 
+* the population mean is significantly different from a claim about the mean
+
+* there is a significant difference between the means of two groups or samples
+
+It is particularly useful when working with small sample sizes and is employed to assess whether the observed differences in sample means are likely to represent true differences in the population or if they could have occurred by chance.
 
 ## Clone the repository
 
@@ -24,11 +28,24 @@ Hypothesis testing is a statistical method used to make informed decisions about
 
 ## Install packages
 
-```
+### Data storage and retrieval
+
+```py
+import numpy as np
 import pandas as pd
+```
+
+### Visualization 
+
+```py
 import seaborn as sns
-from scipy import stats
 import matplotlib.pyplot as plt
+```
+
+### Statistical analysis
+
+```py
+from scipy import stats
 ```
 
 ## Explore the code
@@ -36,4 +53,5 @@ import matplotlib.pyplot as plt
 1. Loading the dataset 
 2. Formulating the hypothesis test set
 3. Conducting the test using statistical test methods
-4. Visualizing the distribution of the data 
+4. Visualizing the distribution of the data
+5. Cross check test restults using p-value (optional)
