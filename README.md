@@ -16,7 +16,7 @@ Hypothesis testing is a statistical method used to make informed decisions about
 
 • <u>T Test</u> - The t-test is a statistical hypothesis test used to determine whether:
 
-* the population mean is significantly different from a claim about the mean
+* the sample mean is significantly different from a guess about the population mean
 
 * there is a significant difference between the means of two groups or samples
 
