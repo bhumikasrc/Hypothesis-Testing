@@ -69,3 +69,6 @@ import streamlit as st
 2. 2 Sample t-test using collected data
 3. 2 Sample t-test using LR model
 4. Discussing type I and type II errors in hypothesis tests
+5. Using 2 generated samples to display hypothesis testing
+6. P-hacking by resampling
+7. P-hacking by selectively choosing data

@@ -17,12 +17,18 @@ def main():
 
     st.markdown('<h2 align="center"> Glasses Make you Taller*</h2>',unsafe_allow_html=True)
     st.divider()
-
-    np.random.seed(10)
-    control = np.random.normal(165,30,100).astype(int)
-    glasses = np.random.normal(160,30,100).astype(int)
-
     col1, col2 = st.columns(2)
+    
+    try:
+        seed = int(st.text_input('Input Random State'))
+    except:
+        seed = 10
+
+    np.random.seed(seed)
+    control = np.random.normal(160,30,100).astype(int)
+    glasses = np.random.normal(165,30,100).astype(int)
+
+    
     with col1:
         st.markdown('<h5 align="center">Control Hacking</h5>',unsafe_allow_html=True)
         control_cutoff = st.slider('Control Slider',
