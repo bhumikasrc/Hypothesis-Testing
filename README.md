@@ -46,12 +46,26 @@ import matplotlib.pyplot as plt
 
 ```py
 from scipy import stats
+import statsmodels.api as sm
 ```
 
-## Explore the code
+### Building a Deck
 
-1. Loading the dataset 
+```py
+import streamlit as st
+```
+
+## Explore the Code demo
+
+1. Loading the dataset
 2. Formulating the hypothesis test set
 3. Conducting the test using statistical test methods
 4. Visualizing the distribution of the data
 5. Cross check test restults using p-value (optional)
+
+## Explore the Final Presentation
+
+1. On site sample data collection
+2. 2 Sample t-test using collected data
+3. 2 Sample t-test using LR model
+4. Discussing type I and type II errors in hypothesis tests
