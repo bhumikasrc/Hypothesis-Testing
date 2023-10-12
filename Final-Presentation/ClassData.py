@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 import statsmodels.api as sm
 import streamlit as st
 
-plt.rcParams['text.color'] = 'w'
-plt.rcParams['axes.labelcolor'] = 'w'
-plt.rcParams['xtick.color'] = 'w'
-plt.rcParams['ytick.color'] = 'w'
+plt.rcParams['text.color'] = 'k'
+plt.rcParams['axes.labelcolor'] = 'k'
+plt.rcParams['xtick.color'] = 'k'
+plt.rcParams['ytick.color'] = 'k'
 
 def main():
     st.markdown("<h1 align='center'>MSDS Cohort height testing</h1>",unsafe_allow_html=True)
@@ -44,14 +44,14 @@ def main():
     fig, ax = plt.subplots(figsize=(5,4))
     
     ax.scatter(data['Glasses'], data['Height'],color='r')
-    ax.set_facecolor('#0f1116')
-    ax.spines[:].set_color('w')
+    ax.set_facecolor('w')
+    ax.spines[:].set_color('k')
 
     # Label x and y axes
     ax.set_xlabel('Glasses')
     ax.set_ylabel('Height')
     # Show the plot
-    fig.set_facecolor('#0f1116')
+    fig.set_facecolor('w')
     fig.tight_layout()
 
     col1, col2 = st.columns(2)

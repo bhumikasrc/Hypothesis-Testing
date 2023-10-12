@@ -6,11 +6,11 @@ import seaborn as sns
 import scipy.stats as stats
 import streamlit as st
 
-sns.set_style('white',rc = {'axes.facecolor': '#0f1116',
-                            'xtick.color':'w',
-                            'ytick.color':'w',
-                            'axes.labelcolor':'w',
-                            'text.color':'w'})
+sns.set_style('white',rc = {'axes.facecolor': 'w',
+                            'xtick.color':'k',
+                            'ytick.color':'k',
+                            'axes.labelcolor':'k',
+                            'text.color':'k'})
 
 
 def main():
@@ -26,7 +26,7 @@ def main():
 
     np.random.seed(seed)
     control = np.random.normal(160,30,100).astype(int)
-    glasses = np.random.normal(165,30,100).astype(int)
+    glasses = np.random.normal(163,30,100).astype(int)
 
     
     with col1:
@@ -48,7 +48,7 @@ def main():
     glasses_edit = glasses[glasses >= glasses_cutoff]
 
     fig = plt.figure(figsize=(6,4))
-    fig.set_facecolor('#0f1116')
+    # fig.set_facecolor('#0f1116')
     sns.kdeplot(control_edit,fill=True, label='control')
     sns.kdeplot(glasses_edit,fill=True, label='glasses')
     plt.title('Distribution of Heights',weight='bold')
@@ -59,8 +59,8 @@ def main():
     plt.axvline(g_m,c='r',linestyle='-')
     
     if st.toggle('6 FOOT',label_visibility='collapsed'):
-        plt.axvline(182.88,linewidth=3,color='lightgreen')
-        plt.text(185.88, 0.01,'6 Foot line',weight='bold',fontsize=20,color='lightgreen')
+        plt.axvline(182.88,linewidth=3,color='k')
+        plt.text(185.88, 0.01,'6 Foot line',weight='bold',fontsize=20,color='k')
     
     plt.legend()
     plt.tight_layout()
