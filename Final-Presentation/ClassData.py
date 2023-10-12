@@ -18,12 +18,12 @@ def main():
     # Heights without glasses
     with col1:
         st.markdown('##### Heights of those without glasses')
-        no_glasses = pd.DataFrame([60,62,64,65,66], columns=['Height'])
-        no_glasses = st.data_editor(no_glasses, hide_index=True)
+        no_glasses = pd.DataFrame(np.zeros(5), columns=['Height'])
+        no_glasses = st.data_editor(no_glasses, hide_index=True,key='no_glasses')
     with col2:
         st.markdown('##### Heights of those with glasses')
-        glasses = pd.DataFrame([52,54,53,49,60], columns=['Height'])
-        glasses = st.data_editor(glasses, hide_index=True)
+        glasses = pd.DataFrame(np.zeros(5), columns=['Height'])
+        glasses = st.data_editor(glasses, hide_index=True,key='glasses')
     with col3:
         st.markdown('##### Conducting a 2 sample t-test')
         t_statistic, p_value = stats.ttest_ind(glasses['Height'], no_glasses['Height'])
